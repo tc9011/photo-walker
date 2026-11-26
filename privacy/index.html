@@ -17,9 +17,9 @@
 
       <section id="zh" lang="zh-Hans">
         <h1>隐私政策</h1>
-        <p class="meta">生效日期：2026 年 11 月 10 日</p>
+        <p class="meta">生效日期：2026 年 11 月 26 日</p>
         <p>
-          Photo Walker（下称「本 App」）由个人开发者 tc9011 开发，用来统计你的照片里保存的拍摄参数。你的照片不会离开你的设备。
+          Photo Walker（下称「本 App」）由个人开发者 tc9011 开发，用来统计你的照片里保存的拍摄参数。除非你自己分享，你的照片不会离开你的设备。
         </p>
 
         <h2>本 App 读取的信息</h2>
@@ -30,6 +30,9 @@
           <li>这些信息只保存在你设备上的本地数据库里。</li>
           <li>
             为了挑选显示的照片，本 App 用设备上的模型给照片评分（Apple 的 Vision 框架和一个 Core ML 美学评分模型），评分在设备上完成。
+          </li>
+          <li>
+            小组件显示的统计和照片缩略图保存在设备上，由本 App 和它的小组件共用。本 App 没打开时，小组件在设备上读取新照片的拍摄时间和参数，跟上相册的变化。
           </li>
         </ul>
 
@@ -59,7 +62,13 @@
         <h2>数据的保存和删除</h2>
         <ul>
           <li>统计数据保存在你的设备上。在「设置」里点「重置数据」可以删除并重新读取；删除本 App 会删除全部数据。</li>
-          <li>本 App 不会修改或删除你相册里的照片。</li>
+          <li>本 App 不会删除你相册里的照片，也不会改动照片的画面和拍摄参数。</li>
+          <li>
+            打开实验室的「按时间补地点」后，推算出的地点只保存在本地数据库里，不改相册。只有在你选好照片、在 App 的确认提示里点「修改」后，本 App 才会把这些地点写入照片的位置信息，不改动别的内容。写入的地点可以在 App 里撤销。
+          </li>
+          <li>
+            分享的图片和视频在设备上生成。「存到相册」把它们存成新的照片和视频，不改原来的照片；「分享」把它们交给你在系统分享面板里选的 App。
+          </li>
         </ul>
 
         <h2>儿童</h2>
@@ -74,10 +83,10 @@
 
       <section id="en" class="lang" lang="en">
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective November 10, 2026</p>
+        <p class="meta">Effective November 26, 2026</p>
         <p>
           Photo Walker (“the app”) is made by tc9011, an independent developer. It shows statistics about the shooting
-          settings saved in your photos. Your photos never leave your device.
+          settings saved in your photos. Your photos never leave your device, unless you share them.
         </p>
 
         <h2>What the app reads</h2>
@@ -91,6 +100,11 @@
           <li>
             To pick the photos it shows, the app scores them with on-device models (Apple's Vision framework and a Core ML
             aesthetics model). The scoring happens on your device.
+          </li>
+          <li>
+            The statistics and thumbnails the widgets show are kept on your device, shared by the app and its widgets. While
+            the app is closed, the widgets read the dates and settings of new photos on your device to keep up with your
+            library.
           </li>
         </ul>
 
@@ -127,7 +141,16 @@
             The statistics are kept on your device. Reset Data in Settings deletes them and reads the photos again,
             deleting the app deletes all of its data.
           </li>
-          <li>The app never changes or deletes the photos in your library.</li>
+          <li>The app never deletes the photos in your library, nor changes their image or their settings.</li>
+          <li>
+            With Places by Time in the Lab, the places the app infers are only kept in its database on your device, your
+            library stays as it is. Only once you pick photos and tap Change in the app's confirmation does the app write
+            these places into the location of the photos, and it changes nothing else. You can undo it in the app.
+          </li>
+          <li>
+            Shared images and videos are made on your device. Save to Photos adds them as new photos and videos and
+            leaves the others as they are; Share hands them to the app you pick in the share sheet.
+          </li>
         </ul>
 
         <h2>Children</h2>
